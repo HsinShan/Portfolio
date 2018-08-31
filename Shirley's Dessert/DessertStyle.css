@@ -1,0 +1,63 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+#title{
+     font-family: 'Galada', cursive;
+}
+#topsec{
+    padding-top: 20px;
+}
+.toprow{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bottomrow{
+    padding-bottom: 20px;
+}
+.sub{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:50%;
+    font-size: 30px;
+    color: white;
+}
+#phone{
+    padding-right: 10px;
+}
+#map{
+    width: 80%;
+    height:300px;
+    margin: 20px 10%;
+
+}
+#location{
+    padding: 20px 0;
+}
+#ref{
+    font-size: 16px;
+    padding-top: 20px;
+  
+}
+#order{
+    padding: 80px;
+    background-color: black;
+    color: white;
+}
+#contact{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: white;
+}
+#contact1{
+    padding-bottom: 80px;
+    background-color: black;
+    color: white;
+}
+.icon{
+    color: white;
+}
+.icon:hover{
+    color: aquamarine;
+}

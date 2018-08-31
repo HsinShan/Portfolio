@@ -1,0 +1,273 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.header{
+    background-image:url(asphalt-blue-sky-clouds-490411-1.jpg);
+    background-position: center -70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 680px;
+}
+.navbar{
+    opacity: 0.7 !important;
+    filter: alpha(opacity=70)!important;
+}
+.nav-item{
+    margin: 5px !important;
+}
+.title{
+    width: 100%;
+    padding: 200px;
+}
+.header h1{
+    color:#FFF;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 2px;
+    line-height: 100px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.header #join{
+    text-decoration: none;
+    width: 180px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: none;
+    border: 3px #63aefb solid;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    display: block;
+    transition: 0.45s;
+}
+#join:hover{
+    background-color: #63aefb;
+    transition: 0.45s;
+}
+.header #btn{
+    width: 180px;
+    margin: auto;
+
+}
+#welcome{
+    width:100%;
+    padding: 100px;
+}
+#welcome h1{
+    width:100%;
+    font-size: 60px;
+    text-align: center;
+    color: #63aefb;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+#welcome p{
+    width:100%;
+    font-size: 30px;
+    text-align: center;
+    color: #bfccd8;
+    padding: 20px 0px;
+}
+#choose{
+    width:100%;
+    padding: 100px;
+    background-color: #bbd7f0;
+}
+#choose h1{
+    width:100%;
+    font-size: 60px;
+    text-align: center;
+    color: #63aefb;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+.toprow{
+    margin: 30px auto;
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+.toprow p{
+    position: absolute;
+    bottom: 0;
+    background-color: #93a6ba;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    height: 0px;
+    line-height: 50px;
+
+}
+
+.quote{
+    background-image:url(asphalt-blue-sky-clouds-490411-1.jpg);
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 660px;
+    padding: 100px;
+}
+.quote h1{
+    width:100%;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 90px;
+}
+.quote p{
+    width:100%;
+    font-size: 30px;
+    text-align: right;
+    color: #fff;
+    margin-top: 30px;
+
+}
+.quote a{
+    text-decoration: none;
+    width: 240px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 50px;
+    background-color: none;
+    color: #fff;
+    text-align: center;
+    border: 9px #63aefb solid;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    display: block;
+    transition: 0.45s;
+}
+.quote a:hover{
+    background-color: #63aefb;
+    transition: 0.45s;
+}
+.quote div{
+    width: 250px;
+    margin: auto;
+
+}
+#about{
+    width:100%;
+    padding: 100px;
+    border-bottom: 5px #63aefb solid;
+}
+#about p{
+    width:100%;
+    font-size: 30px;
+    text-align: left;
+    color: #bfccd8;
+    padding: 20px 0px;
+}
+#about img{
+    margin: 50px 30px;
+}
+.copy{
+    width:100%;
+    padding: 5px;
+}
+.copy p{
+    width:100%;
+    font-size: 24px;
+    text-align: center;
+    color: #bfccd8;
+}
+
+
+/*RWD字體設置*/
+@media screen and (max-width: 920px) {
+
+    .title{
+        width: 100%;
+        padding: 140px 100px;
+    }
+    .header h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header #join{
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .header #btn{
+        width: 150px;
+    }
+    #welcome,#choose,#about{
+        padding: 40px;
+    }
+    .quote{
+        padding: 100px 50px;
+    }
+    #welcome h1{
+        font-size: 40px;
+    }
+    #welcome p{
+        font-size: 20px;
+    }
+    #choose h1{
+        font-size: 40px;
+    }
+    .toprow p{
+        font-size: 20px;
+
+    }
+    .quote h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .quote p{
+        font-size: 20px;
+        margin-top: 30px;
+
+    }
+    .quote a{
+        text-decoration: none;
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 30px;
+        border-width: 5px;
+    }
+    .quote div{
+        width: 200px;
+    }
+    #about p{
+        font-size: 20px;
+    }
+    #about img{
+        margin: 50px 5px;
+    }
+    .copy p{
+        font-size: 16px;
+    }
+    .toprow p{
+        height: 50px;
+    }
+
+
+}
+
+

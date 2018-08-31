@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    padding: 15px 0;
+    text-align: center;
+    color: #444547;
+}
+header h1{
+    font-family: 'Courgette', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+}
+header h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+nav{
+    border-bottom: 2px #444547 solid;
+    border-top: 2px #444547 solid;
+    cursor: pointer;
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav>ul>li{
+    flex-grow: 1;
+    padding: 3px;
+    transition: all 0.5s;
+}
+nav>ul>li:hover{
+    background-color: #444547;
+    color: #e5e5e5;
+}
+#photo{
+    width:100%;
+    position: relative;
+}
+#photo img{
+    width: 100%;
+}
+#photo #num{
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+}
+#photo #num ul{
+    margin: 0 auto;
+    width: 150px;
+}
+
+#photo ul li{
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    list-style: none;
+    border: 3px solid #e5e5e5;
+    float: left;
+    margin: 0 5px;
+}
+#photo .active{
+    background: #e5e5e5;
+}
+#sale{
+    padding: 60px 0;
+    text-align: center;
+    color: #444547;
+}
+#sale h1{
+    font-family: 'Courgette', cursive;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+    font-size: 48px;
+}
+.sales{
+    display: flex;
+    justify-content: space-around;
+}
+.sales div{
+    padding: 0;
+    width: 27%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 5px solid #444547;
+    overflow: hidden;
+}
+.sale1 img,.sale2 img,.sale3 img{
+    width:100%;
+    transition: all 0.5s ease-in; 
+}
+.sale1 img:hover{
+    transform: scale(1.5);
+}
+.sale2 img:hover{
+    transform: scale(1.5);
+}
+.sale3 img:hover{
+    transform: scale(1.5);
+}
+#new{
+    padding: 60px 100px;
+    text-align: center;
+    color: #444547;
+    background-color: #e5e5e5;
+}
+#new h1{
+    font-family: 'Courgette', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+}
+.sec{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-content: flex-start;
+    margin: 50px 0;
+}
+.sec div{
+    width: 30%;
+    text-align: center;
+    margin: 60px;
+    border: 2px #444547 solid; 
+    cursor: pointer;
+}
+.sec img{
+    width:100%;
+}
+.more{
+    color: #444547;
+    border: 3px #444547 solid;
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 38px;
+    margin: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.more:hover{
+    transform: scale(1.3);
+}
+.sec p{
+    color: #444547;
+}
+#copy{
+    padding: 30px 0;
+    text-align: center;
+    color: #444547;
+}
+
+@media all and (max-width: 600px){
+    nav::before{
+        content:"Menu +";
+        padding: 0 10px;
+        font-size: 30px;
+    }
+    nav>ul{
+        flex-direction: column;
+    }
+    nav:hover ul li{
+        display: block;
+        animation: menu 10s ease-in-out forwards;
+    }
+    nav>ul>li{
+        padding: 10px 0;
+        display: none;
+        background-color: #444547;
+        color: #e5e5e5;
+        border-bottom: 2px #e5e5e5 solid;
+        transition: all 1s;
+    }
+    nav>ul>li:last-child{
+        border-bottom: none;
+    }
+    nav:hover > ul li:nth-child(1) { animation-duration: 0.3s }
+    nav:hover > ul li:nth-child(2) { animation-duration: 0.5s }
+    nav:hover > ul li:nth-child(3) { animation-duration: 0.7s }
+    nav:hover > ul li:nth-child(4) { animation-duration: 0.9s }
+    nav:hover > ul li:nth-child(5) { animation-duration: 1.1s }
+    nav:hover > ul li:nth-child(6) { animation-duration: 1.3s }
+
+    .sales{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sales div{
+        margin:10px auto;
+        width: 50%;
+        cursor: pointer;
+
+    }
+    .sec{
+        flex-direction: column;
+        justify-content:center;
+        align-content: flex-start;
+        margin:0;
+    }
+    .sec div{
+        width: 90%;
+        margin: 30px auto;
+        border: 2px #444547 solid; 
+        cursor: pointer;
+    }
+    #new{
+    padding: 60px 0px;
+    text-align: center;
+    color: #444547;
+    background-color: #e5e5e5;
+}
+    @keyframes menu{
+        0%{
+            opacity: 0;
+            transform: rotateX(-90deg) 
+        }
+        100%{
+            opacity: 1;
+            transform: rotateX(0deg)
+        }
+    }
+}

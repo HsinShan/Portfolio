@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="bagstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Lato" rel="stylesheet"> 
+        <title>BagStore</title>
+        <script>
+            window.onload=function(){
+                var ophoto=document.getElementById("photo");
+                var oimg=ophoto.getElementsByTagName("img")[0];
+                var oul=ophoto.getElementsByTagName("ul")[0];
+                var oli=oul.getElementsByTagName("li");
+                var timer=null;
+                var currentpage=0;
+
+                starttimer();
+
+                for(var i=0;i<oli.length;i++){
+                    oli[i].index=i;
+                    oli[i].onclick=function(){
+                        stoptimer();
+                        oli[currentpage].className="";
+                        currentpage=this.index;
+                        oli[currentpage].className="active";
+                        changeview();
+                        starttimer();
+                    }
+                }
+
+                function starttimer(){
+                    if(timer==null){
+                        timer=setInterval(function(){
+                            oli[currentpage].className="";
+                            currentpage++;
+                            currentpage=currentpage>2?0:currentpage;
+                            oli[currentpage].className="active";
+                            changeview();
+                        },2000);
+                    }
+                }
+                function changeview(){
+                    oimg.src=(currentpage+1)+".jpg";
+                }
+                function stoptimer(){
+                    clearInterval(timer);
+                    timer=null;
+                }
+
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <header>
+            <h1>BagStore</h1>
+            <h3>All Pack for You</h3>
+        </header>
+        <nav>
+            <ul>
+                <li>New Arrival</li>
+                <li>Hot Sale</li>
+                <li>Best</li>
+                <li>All</li>
+                <li>On Sale</li>
+                <li>InStock</li>
+            </ul>
+        </nav>
+        <div id="photo">
+            <img src="1.jpg">
+            <div id="num">
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div id="sale">
+            <h1>On Sale</h1>
+            <div class="sales">
+                <div class="sale1">
+                    <img src="accessory-bag-beach-1103511.jpg">
+                </div>
+                <div class="sale2">
+                    <img src="background-bag-detail-1027075.jpg">
+                </div>
+                <div class="sale3">
+                    <img src="bag-brand-business-167703.jpg">
+                </div>
+            </div>
+        </div>
+        <div id="new">
+            <h1>New Arrival</h1>
+            <div class="sec">
+                <div class="sec1"><img src="new/access-adult-bag-936081.jpg"><h3>Briefcase</h3></div>
+                <div class="sec1"><img src="new/backpack-bag-bags-934673.jpg"><h3>Yellow backpack</h3></div>
+            </div>
+            <div class="sec">
+                <div class="sec1"><img src="new/bag-fashion-girl-1204469.jpg"><h3>Cross-body pouch</h3></div>
+                <div class="sec1"><img src="new/accessory-adult-bag-1102225.jpg"><h3>Cross-body pouch</h3></div>
+            </div>
+            <div class="more">+</div>
+            <p>View More</p>
+        </div>
+        <div id="copy">
+            <p>© 2018 BagStore all rights reserved <br>
+                All bag photos are provided by pexels.com.</p>
+        </div>
+
+    </body>
+</html>
