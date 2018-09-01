@@ -1,18 +1,11 @@
 # blog
 
-> A Vue.js project
+> A Vue.js & Firebase  project
 
-## Build Setup
+### 透eji4 Vue實現blog網站
+#### 文章列表頁面
+![image](https://github.com/HsinShan/Portfolio/blob/master/blog/blog.png)
+#### 新增文章頁面
+![image](https://github.com/HsinShan/Portfolio/blob/master/blog/blogadd.png)
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
