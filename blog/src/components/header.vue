@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="warning">
+  <b-navbar toggleable="md" type="dark">
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
     <b-navbar-brand href="/">MindPost</b-navbar-brand>
@@ -8,13 +8,6 @@
       <b-navbar-nav>
         <b-nav-item href="/">Home</b-nav-item>
         <b-nav-item href="/add">New Post</b-nav-item>
-      </b-navbar-nav>
-
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-        </b-nav-form>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -26,5 +19,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.navbar {
+  background-color: #ff657a;
+}
+.nav-link {
+  padding: 0px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  border-bottom: 3px solid #4fb99f;
+}
 </style>
