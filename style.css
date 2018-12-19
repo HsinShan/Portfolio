@@ -76,17 +76,17 @@ nav li .active {
   padding: 0;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
 }
 .second-block .skills ul li {
-  min-width: 100px;
+  min-width: 110px;
   height: 40px;
   line-height: 40px;
   border: 2px #7d625a solid;
   border-radius: 10px;
-  margin: 5px 0;
+  margin: 5px;
   text-align: center;
   letter-spacing: 3px;
   padding: 0 5px;
