@@ -14,7 +14,7 @@
 ![image](https://github.com/HsinShan/Portfolio/blob/master/blog/blogAddSuccess.png)
 --------------------------------------------------------------------------------------------------------------------------------------
 > 個別文章內容頁面
-![image](https://github.com/HsinShan/Portfolio/blob/master/blog/blogAdd.png)
+![image](https://github.com/HsinShan/Portfolio/blob/master/blog/blogS.png)
 
 
 
