@@ -1,269 +1,268 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
-    font-family: 'Noto Sans TC';
+  font-family: "Noto Sans TC";
 }
-body{
-    margin: 0;
-    color: #7d625a;
+body {
+  margin: 0;
+  color: #7d625a;
 }
-.header-block{
-    width:100%;
-    background: url(images/apple-watch-desk-equipment-876467.jpg) no-repeat 0px -200px;
+.header-block {
+  width: 100%;
+  background: url(images/apple-watch-desk-equipment-876467.jpg) no-repeat 0px -200px;
+  background-size: cover;
+  text-align: center;
+  padding: 200px 0;
+}
+h1 {
+  letter-spacing: 5px;
+}
+.header-block h1 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 60px;
+  font-family: "Do Hyeon", sans-serif;
+}
+.header-block h3 {
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+nav {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #e6c3b0;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #e8e8ea;
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+}
+nav li a:hover {
+  background: #e8e8ea;
+  color: #7d625a;
+}
+nav li .active {
+  background: #e8e8ea;
+  color: #7d625a;
+  font-weight: bold;
+}
+.second-block,
+.third-block {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.skills {
+  width: 95%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.second-block .skills ul {
+  width: 80%;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.second-block .skills ul li {
+  min-width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border: 2px #7d625a solid;
+  border-radius: 10px;
+  margin: 5px 0;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 0 5px;
+}
+.second-block .skill-p {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 50px auto;
+}
+.second-block p {
+  width: 300px;
+  text-align: center;
+  margin: 50px;
+  line-height: 30px;
+}
+.second-block .skill-p p img {
+  width: 60px;
+}
+.third-block {
+  background: #e6c3b0;
+}
+.third-block h1 {
+  padding-bottom: 50px;
+}
+.work,
+.work-game .work-straight {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.work-wide {
+  text-align: left;
+}
+.work-straight {
+  text-align: center;
+}
+.work h3 {
+  margin-top: 0;
+}
+.work > div {
+  margin: 20px;
+  width: 400px;
+}
+.work img {
+  width: 400px;
+}
+.work-game img {
+  width: 150px;
+}
+.work-game .work-straight div {
+  margin: 10px;
+}
+.connection,
+.connection-game {
+  position: relative;
+  overflow: hidden;
+}
+
+.connection > div {
+  position: absolute;
+  padding: 80px 60px;
+  width: 230px;
+  top: 35px;
+  left: -350px;
+  background: #fff;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 20px;
+}
+.connection-game > div {
+  position: absolute;
+  padding: 20px 17px;
+  width: 100px;
+  top: 5px;
+  left: -135px;
+  background: #fff;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  margin: 0px !important;
+  border-radius: 20px;
+}
+
+.connection > div > a,
+.connection-game > div > a,
+.intro-block a {
+  text-decoration: none;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  background: #7d625a;
+  color: #e8e8ea;
+  display: inline-block;
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+}
+
+.connection > div > a:hover,
+.connection-game > div > a:hover,
+.intro-block a:hover {
+  background: #e6c3b0;
+  color: #7d625a;
+}
+.information-block {
+  background: #7d625a;
+  color: #e8e8ea;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.intro-block {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.intro-block p {
+  margin: 0;
+}
+
+.intro-block img {
+  width: 60px;
+}
+#photo {
+  width: 100px;
+  margin: 50px auto;
+  border-radius: 50px;
+}
+.about div {
+  width: 80%;
+  margin: 50px auto;
+}
+@media all and (max-width: 1000px) {
+  .header-block {
+    width: 100%;
+    background: url(images/apple-watch-desk-equipment-876467.jpg) no-repeat 0 -20px;
     background-size: cover;
     text-align: center;
-    padding: 200px 0;
-}
-h1{
-    letter-spacing: 5px;
-}
-.header-block h1{
-    margin: 0;
-    padding-bottom:10px;
-    font-size: 60px;
-    font-family: 'Do Hyeon', sans-serif;
-}
-.header-block h3{
-    font-size: 30px;
-    margin: 0;
-    letter-spacing: 2px;
-}
-nav{
-    width:100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #e6c3b0;
-}
-nav li{
-    list-style: none;
-}
-nav li a{
-    text-decoration: none;
-    color: #e8e8ea;
-    display:block;
-    width:100px;
-    height:35px;
-    line-height: 35px;
-    text-align: center;
-    margin: 5px;
-    border-radius: 10px;
-    transition: all 0.5s;
-    letter-spacing: 2px;
-}
-nav li a:hover{
-    background: #e8e8ea;
-    color: #7d625a;
-}
-nav li .active{
-    background: #e8e8ea;
-    color: #7d625a;
-    font-weight: bold;
-}
-.second-block,.third-block{
-    width: 100%;
-    padding:100px 0;
-    text-align: center;
-}
-.skills{
-    width:95%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-around;
-}
-.second-block .skills ul{
-    width:80%;
-    padding: 0;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
-}
-.second-block .skills ul li{
-    min-width:100px;
-    height: 40px;
-    line-height: 40px;
-    border: 2px #7d625a solid;
-    border-radius: 10px;
-    margin: 5px 0;
-    text-align: center;
-    letter-spacing: 3px;
-    padding: 0 5px;
-}
-.second-block .skill-p{
-    display: flex;
-    justify-content: space-around;
-    width:90%;
-    margin: 50px auto;
-}
-.second-block p{
-    width: 300px;
-    text-align: center;
-    margin: 50px;
-    line-height: 30px;
-}
-.second-block .skill-p p img{
-    width: 60px;
+    padding: 150px 0;
+  }
 
-}
-.third-block{
-    background: #e6c3b0;
-}
-.third-block h1{
-    padding-bottom: 50px;
-}
-.work,.work-game .work-straight{
+  .second-block,
+  .third-block {
+    padding: 50px 0;
+  }
+  .second-block .skill-p {
+  }
+  .third-block h1 {
+    padding-bottom: 20px;
+  }
+
+  .work {
     width: 90%;
     margin: auto;
-    display: flex;
-    justify-content: center; 
-}
-.work-wide{
-    text-align: left;
-}
-.work-straight{
-    text-align: center;
-}
-.work h3{
-    margin-top: 0;
-}
-.work>div{
-    margin: 20px;
-    width:400px;
-}
-.work img{
-    width:400px;
-}
-.work-game img{
-    width:150px;
-}
-.work-game .work-straight div{
-    margin: 10px;
-}
-.connection,.connection-game{
-    position: relative;
-    overflow: hidden;
-}
+    flex-direction: column;
+  }
+  .work-straight {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .work-wide > div {
+    margin: 10px auto !important;
+  }
 
-.connection>div{
-    position: absolute;
-    padding: 80px 60px;
-    width:230px;
-    top:35px;
-    left:-350px;
-    background: #FFF;
-    opacity: 0.9;
-    filter: alpha(opacity=90);
-    border-radius: 20px;
-}
-.connection-game>div{
-    position: absolute;
-    padding: 20px 17px;
-    width:100px;
-    top:5px;
-    left:-135px;
-    background: #FFF;
-    opacity: 0.9;
-    filter: alpha(opacity=90);
-    margin: 0px!important;
-    border-radius: 20px;
-}
-
-.connection>div>a,.connection-game>div>a,.intro-block a{
-    text-decoration: none;
-    width:100px;
-    height: 35px;
-    line-height: 35px;
-    background: #7d625a;
-    color: #e8e8ea;
-    display: inline-block;
-    border-radius: 20px;
-    text-align: center;
-    margin: 5px;
-    transition: all 0.5s;
-    letter-spacing: 2px;
-}
-
-.connection>div>a:hover,.connection-game>div>a:hover,.intro-block a:hover{
-    background: #e6c3b0;
-    color: #7d625a;
-}
-.information-block{
-    background: #7d625a;
-    color: #e8e8ea;
-    padding: 10px 0;
-    text-align: center;
+  .work > div {
+    margin: 60px auto;
+  }
+  .work img {
     width: 100%;
+  }
+  .work-game img {
+    width: 150px;
+  }
 }
-.intro-block{
-    width:80%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-}
-.intro-block p{
-    margin: 0;
-}
-
-.intro-block img{
-    width: 60px;
-}
-#photo{
-    width: 100px;
-    margin: 50px auto;
-    border-radius: 50px;
-}
-.about div{
-    width: 80%;
-    margin: 50px auto;
-
-}
-@media all and (max-width: 1000px){
-    .header-block{
-        width:100%;
-        background: url(images/apple-watch-desk-equipment-876467.jpg) no-repeat 0 -20px;
-        background-size: cover;
-        text-align: center;
-        padding: 150px 0;
-    }
-
-    .second-block,.third-block{
-        padding:50px 0;
-    }
-    .second-block .skill-p{
-
-    }
-    .third-block h1{
-        padding-bottom: 20px;
-    }
-
-    .work{
-        width: 90%;
-        margin: auto;
-        flex-direction: column;
-    }
-    .work-straight{
-        width: 90%;
-        margin: auto;
-        flex-wrap: wrap;
-    }
-    .work-wide>div{
-        margin: 10px auto!important;
-    }
-
-    .work>div{
-        margin: 60px auto;
-    }
-    .work img{
-        width:100%;
-    }
-    .work-game img{
-        width:150px;
-    }
-
-
-   
-
-
-}
-
