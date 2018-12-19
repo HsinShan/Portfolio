@@ -1,228 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nunito" rel="stylesheet"> 
-        <title>Shirley's Portfolio</title>
-        <script src="move.js" type="text/javascript"></script>
-        <script>
-            window.onload=function(){
-                var connectionli=document.getElementsByClassName("connection");
-                var connectdiv=null;
-                var connectiongameli=document.getElementsByClassName("connection-game");
-                var connectgamediv=null;
-                
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nunito"
+      rel="stylesheet"
+    />
+    <title>Shirley's Portfolio</title>
+    <script src="move.js" type="text/javascript"></script>
+    <script>
+      window.onload = function() {
+        var connectionli = document.getElementsByClassName("connection");
+        var connectdiv = null;
+        var connectiongameli = document.getElementsByClassName(
+          "connection-game"
+        );
+        var connectgamediv = null;
 
-                for(var i=0;i<connectionli.length;i++){
-                    connectionli[i].onmouseover=function(){
-                        connectdiv=this.getElementsByTagName("div")[0];
-                        startmove(connectdiv,'left',20);
+        for (var i = 0; i < connectionli.length; i++) {
+          connectionli[i].onmouseover = function() {
+            connectdiv = this.getElementsByTagName("div")[0];
+            startmove(connectdiv, "left", 20);
 
-                        this.onmouseout=function(){
-                            startmove(connectdiv,'left',-350);
-                        }
-                    }
-                }
-                for(var j=0;j<connectiongameli.length;j++){
-                    connectiongameli[j].onmouseover=function(){
-                        connectgamediv=this.getElementsByTagName("div")[0];
-                        startmove(connectgamediv,'left',5);
+            this.onmouseout = function() {
+              startmove(connectdiv, "left", -350);
+            };
+          };
+        }
+        for (var j = 0; j < connectiongameli.length; j++) {
+          connectiongameli[j].onmouseover = function() {
+            connectgamediv = this.getElementsByTagName("div")[0];
+            startmove(connectgamediv, "left", 5);
 
-                        this.onmouseout=function(){
-                            startmove(connectgamediv,'left',-135);
-                        }
-                    }
-                }
-            }
-        </script>
-    </head>
-    <body>
-        <div class="header-block">
-            <h1>PORTFOLIO</h1>
-            <h3>謝欣珊的作品集</h3>
+            this.onmouseout = function() {
+              startmove(connectgamediv, "left", -135);
+            };
+          };
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="header-block">
+      <h1>PORTFOLIO</h1>
+      <h3>謝欣珊的作品集</h3>
+    </div>
+    <nav>
+      <li><a href="about.html">關於我</a></li>
+      <li><a class="active" href="#">作品集</a></li>
+    </nav>
+    <div class="second-block">
+      <h1>技能</h1>
+
+      熟悉語言為HTML / CSS /
+      Javascript，實習工作主要使用vue，有基本的git版本控制概念，會使用Photoshop繪製網站雛形，並且有規劃及建置資料庫的經驗。
+
+      <div class="skills">
+        <ul>
+          <li>Html</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Jquery Mobile</li>
+          <li>Bootstrap</li>
+          <li>Mysql</li>
+          <li>Vue</li>
+          <li>Axios</li>
+          <li>SCSS</li>
+        </ul>
+      </div>
+      <div class="skill-p">
+        <p>
+          <img src="images/painting-palette.png" /><br />
+          <strong>具基本視覺構成設計與版面編排美感</strong><br />
+          畢業專案有與UI設計者一同規劃網頁的設計，也會使用Photoshop進行基本的網頁設計。<br />
+        </p>
+        <p>
+          <img src="images/coding.png" /><br />
+          <strong>有基本的git版本控制概念</strong><br />
+          目前實習工作有用git維護程式碼，所以對於git操作及版本控制有基本概念。
+        </p>
+        <p>
+          <img src="images/database.png" /><br />
+          <strong>熟悉資料庫操作及建置</strong><br />
+          有規畫並建置資料庫的經驗，在畢業專案中負責規畫資料庫架構並協助建置
+        </p>
+      </div>
+    </div>
+    <div class="third-block">
+      <h1>作品集</h1>
+      <div class="work work-wide">
+        <div class="connection">
+          <img src="images/Handstory-c.jpg" />
+          <div>
+            <a
+              href="https://github.com/HsinShan/Handstory/blob/master/README.md"
+              class="demo"
+              >DEMO</a
+            >
+            <a href="https://github.com/HsinShan/Handstory" class="demo"
+              >原始碼</a
+            >
+          </div>
         </div>
-        <nav>
-            <li><a href="about.html">關於我</a></li>
-            <li><a class="active" href="#">作品集</a></li>
-        </nav>
-        <div class="second-block">
-            <h1>技能</h1>
-            <div class="skills">
-
-                <ul>
-                    <li>Html</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Jquery</li>
-                    <li>Jquery Mobile</li>
-                    <li>Bootstrap</li>
-                    <li>Mysql</li>
-                    <li>Vue</li>
-                </ul>
-            </div>
-            <div class="skill-p">
-                <p><img src="images/painting-palette.png"><br>
-                    <strong>具基本視覺構成設計與版面編排美感</strong><br>
-                    畢業專案有與UI設計者一同規劃網頁的設計，也會使用Photoshop進行基本的網頁設計。<br>
-                    </p>
-                <p><img src="images/coding.png"><br>
-                    <strong>知道基礎的後端開發模式</strong><br>
-                    畢業專案有協助PHP後端開發測試網站及串接前後端
-                </p>
-                <p><img src="images/database.png"><br>
-                    <strong>熟悉資料庫操作及建置</strong><br>
-                    有規畫並建置資料庫的經驗，在畢業專案中負責規畫資料庫架構並協助建置
-                </p>
-            </div>
+        <div>
+          <h3>HandStory(美甲資訊整合平台) / 前端開發</h3>
+          <p>2017.01-2018.06 畢業專案</p>
+          <p>
+            電腦版:php+html+css+jquery<br />
+            手機版:php+Jquery mobile(html/css/jquery)
+          </p>
+          <ul>
+            負責工作:
+            <li>web/行動/平板前端開發(html/css/jquery)</li>
+            <li>資料庫規劃及建置(mysql)</li>
+            <li>協助PHP後端開發測試網站及串接前後端</li>
+          </ul>
         </div>
-        <div class="third-block">
-            <h1>作品集</h1>
-            <div class="work work-wide">
-                <div class="connection">
-                    <img src="images/Handstory-c.jpg">
-                    <div>
-                        <a href="https://github.com/HsinShan/Handstory/blob/master/README.md" class="demo">DEMO</a>
-                        <a href="https://github.com/HsinShan/Handstory" class="demo">原始碼</a>
-                    </div>
-                </div>
-                <div>
-                    <h3>HandStory(美甲資訊整合平台) / 前端開發</h3>
-                    <p>2017.01-2018.06 畢業專案</p>
-                    <p>電腦版:php+html+css+jquery<br>
-                        手機版:php+Jquery mobile(html/css/jquery)</p>
-                    <ul>負責工作:
-                        <li>web/行動/平板前端開發(html/css/jquery)</li>
-                        <li>資料庫規劃及建置(mysql)</li>
-                        <li>協助PHP後端開發測試網站及串接前後端</li>
-                    </ul>
-
-                </div>
+      </div>
+      <div class="work work-straight">
+        <div>
+          <div class="connection">
+            <img src="images/Bag.jpg" />
+            <div>
+              <a href="https://hsinshan.github.io/Portfolio/Bag/" class="demo"
+                >DEMO</a
+              >
+              <a
+                href="https://github.com/HsinShan/Portfolio/tree/master/Bag"
+                class="demo"
+                >原始碼</a
+              >
             </div>
-            <div class="work work-straight">
-                <div>
-                    <div class="connection">
-                        <img src="images/HappyTravel.jpg">
-                        <div>
-                            <a href="https://hsinshan.github.io/Portfolio/HappyTravel Club/" class="demo">DEMO</a>
-                            <a href="https://github.com/HsinShan/Portfolio/tree/master/HappyTravel%20Club" class="demo">原始碼</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>HappyTravel Club</h3>
-                        <p>Html+CSS+Javascript+Bootstrap</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="connection">
-                        <img src="images/Bag.jpg">
-                        <div>
-                            <a href="https://hsinshan.github.io/Portfolio/Bag/" class="demo">DEMO</a>
-                            <a href="https://github.com/HsinShan/Portfolio/tree/master/Bag" class="demo">原始碼</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>BagStore</h3>
-                        <p>RWD+CSS animation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="work work-straight">
-                <div>
-                    <div class="connection">
-                        <img src="images/Dessert.jpg">
-                        <div>
-                            <a href="https://hsinshan.github.io/Portfolio/Shirley's Dessert/" class="demo">DEMO</a>
-                            <a href="https://github.com/HsinShan/Portfolio/tree/master/Shirley's%20Dessert" class="demo">原始碼</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Shirley's Dessert</h3>
-                        <p>Bootstrap</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="connection">
-                        <img src="images/blog.png">
-                        <div>
-                            <a href="https://github.com/HsinShan/Portfolio/tree/master/blog" class="demo">原始碼</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Blog</h3>
-                        <p>Vue.js+Firebase</p>
-                    </div>
-                </div>
-            </div>
-            <div class="work-game">
-                <h2>Javascript小遊戲</h2>
-                <div class="work-straight">
-                    <div>
-                        <div class="connection-game">
-                            <img src="images/Coincollector.jpg">
-                            <div>
-                                <a href="https://hsinshan.github.io/DailyChallenge/CoinCollector.html" class="demo">DEMO</a><br>
-                                <a href="https://github.com/HsinShan/DailyChallenge/blob/master/CoinCollector.html" class="demo">原始碼</a>
-                            </div>
-                        </div>
-                        <div>
-                            <h3>Coincollector</h3>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="connection-game">
-                            <img src="images/BombNumber.jpg">
-                            <div>
-                                <a href="https://hsinshan.github.io/DailyChallenge/bombnumber.html" class="demo">DEMO</a><br>
-                                <a href="https://github.com/HsinShan/DailyChallenge/blob/master/bombnumber.html" class="demo">原始碼</a>
-                            </div>
-                        </div>
-                        <div>
-                            <h3>BombNumber</h3>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="connection-game">
-                            <img src="images/Painter.jpg">
-                            <div>
-                                <a href="https://hsinshan.github.io/DailyChallenge/painter.html" class="demo">DEMO</a><br>
-                                <a href="https://github.com/HsinShan/DailyChallenge/blob/master/painter.html" class="demo">原始碼</a>
-                            </div>
-                        </div>
-                        <div>
-                            <h3>Painter</h3>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="connection-game">
-                            <img src="images/calculator.jpg">
-                            <div>
-                                <a href="https://hsinshan.github.io/DailyChallenge/calculator.html" class="demo">DEMO</a><br>
-                                <a href="https://github.com/HsinShan/DailyChallenge/blob/master/calculator.html" class="demo">原始碼</a>
-                            </div></div>
-                        <div>
-                            <h3>Calculator</h3>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="connection-game">
-                            <img src="images/match.jpg">
-                            <div>
-                                <a href="https://hsinshan.github.io/DailyChallenge/matching.html" class="demo">DEMO</a><br>
-                                <a href="https://github.com/HsinShan/DailyChallenge/blob/master/matching.html" class="demo">原始碼</a>
-                            </div>
-                        </div>
-                        <div>
-                            <h3>Matching</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div>
+            <h3>BagStore</h3>
+            <p>RWD+CSS animation</p>
+          </div>
         </div>
-        <div class="information-block">
-            <p>更多作品資訊請上 : <a href="https://github.com/HsinShan/">Github</a></p>
-           
+        <div>
+          <div class="connection">
+            <img src="images/blog.png" />
+            <div>
+              <a
+                href="https://github.com/HsinShan/Portfolio/tree/master/blog"
+                class="demo"
+                >原始碼</a
+              >
+            </div>
+          </div>
+          <div>
+            <h3>Blog</h3>
+            <p>Vue.js+Firebase</p>
+          </div>
         </div>
-    </body>
+      </div>
+      <div class="work-game">
+        <h2>Javascript小遊戲</h2>
+        <div class="work-straight">
+          <div>
+            <div class="connection-game">
+              <img src="images/Coincollector.jpg" />
+              <div>
+                <a
+                  href="https://hsinshan.github.io/DailyChallenge/CoinCollector.html"
+                  class="demo"
+                  >DEMO</a
+                ><br />
+                <a
+                  href="https://github.com/HsinShan/DailyChallenge/blob/master/CoinCollector.html"
+                  class="demo"
+                  >原始碼</a
+                >
+              </div>
+            </div>
+            <div><h3>Coincollector</h3></div>
+          </div>
+          <div>
+            <div class="connection-game">
+              <img src="images/BombNumber.jpg" />
+              <div>
+                <a
+                  href="https://hsinshan.github.io/DailyChallenge/bombnumber.html"
+                  class="demo"
+                  >DEMO</a
+                ><br />
+                <a
+                  href="https://github.com/HsinShan/DailyChallenge/blob/master/bombnumber.html"
+                  class="demo"
+                  >原始碼</a
+                >
+              </div>
+            </div>
+            <div><h3>BombNumber</h3></div>
+          </div>
+
+          <div>
+            <div class="connection-game">
+              <img src="images/Painter.jpg" />
+              <div>
+                <a
+                  href="https://hsinshan.github.io/DailyChallenge/painter.html"
+                  class="demo"
+                  >DEMO</a
+                ><br />
+                <a
+                  href="https://github.com/HsinShan/DailyChallenge/blob/master/painter.html"
+                  class="demo"
+                  >原始碼</a
+                >
+              </div>
+            </div>
+            <div><h3>Painter</h3></div>
+          </div>
+          <div>
+            <div class="connection-game">
+              <img src="images/calculator.jpg" />
+              <div>
+                <a
+                  href="https://hsinshan.github.io/DailyChallenge/calculator.html"
+                  class="demo"
+                  >DEMO</a
+                ><br />
+                <a
+                  href="https://github.com/HsinShan/DailyChallenge/blob/master/calculator.html"
+                  class="demo"
+                  >原始碼</a
+                >
+              </div>
+            </div>
+            <div><h3>Calculator</h3></div>
+          </div>
+          <div>
+            <div class="connection-game">
+              <img src="images/match.jpg" />
+              <div>
+                <a
+                  href="https://hsinshan.github.io/DailyChallenge/matching.html"
+                  class="demo"
+                  >DEMO</a
+                ><br />
+                <a
+                  href="https://github.com/HsinShan/DailyChallenge/blob/master/matching.html"
+                  class="demo"
+                  >原始碼</a
+                >
+              </div>
+            </div>
+            <div><h3>Matching</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="information-block">
+      <p>
+        更多作品資訊請上 : <a href="https://github.com/HsinShan/">Github</a>
+      </p>
+    </div>
+  </body>
 </html>

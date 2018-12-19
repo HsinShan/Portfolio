@@ -16,9 +16,9 @@
           <b-form-group>
             <b-form-checkbox-group v-model="blog.catogories">
               <b-form-checkbox value="Happy">Happy</b-form-checkbox>
+              <b-form-checkbox value="Hopeful">Hopeful</b-form-checkbox>
+              <b-form-checkbox value="SoSo">SoSo</b-form-checkbox>
               <b-form-checkbox value="Terrible">Terrible</b-form-checkbox>
-              <b-form-checkbox value="Better">Better</b-form-checkbox>
-              <b-form-checkbox value="Worse">Worse</b-form-checkbox>
             </b-form-checkbox-group>
           </b-form-group>
           <b-button type="submit" @click.prevent="post" v-if="!submitted" variant="primary">Submit</b-button>
@@ -32,8 +32,8 @@
         <b-card :title="blog.name" tag="article" style="max-width: 20rem;" class="mb-2">
           <hr style="color:#ddd">
           <p class="card-text">{{blog.content}}</p>
-          <b-button v-for="catogory in blog.catogories" :key="catogory.id">{{catogory}}</b-button>
-          <p class="card-text">{{blog.author}}</p>
+          <p class="card-text" style="text-align:right;">{{blog.author}}</p>
+          <b-button v-for="catogory in blog.catogories" :key="catogory.id" size="sm">{{catogory}}</b-button>
         </b-card>
       </div>
     </div>
